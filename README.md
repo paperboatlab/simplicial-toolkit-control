@@ -1,4 +1,4 @@
-# paperboat-toolkit-control
+# simplicial-toolkit-control
 
 The optional control toolkit for [Paperboat](https://github.com/paperboatlab/paperboat): PID and the
 clock dynamics, transfer functions and state space, filters, nonlinear and discrete blocks, LQR,
@@ -12,8 +12,8 @@ a block's ports and params come from the catalog, so write only what the catalog
 ## Install
 
 ```sh
-paperboat toolkit install optimization --repo https://github.com/paperboatlab/paperboat-toolkit-optimization.git
-paperboat toolkit install control --repo https://github.com/paperboatlab/paperboat-toolkit-control.git
+paperboat toolkit install optimization --repo https://github.com/paperboatlab/simplicial-toolkit-optimization.git
+paperboat toolkit install control --repo https://github.com/paperboatlab/simplicial-toolkit-control.git
 ```
 
 Then in the station's `main`:

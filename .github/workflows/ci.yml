@@ -18,7 +18,7 @@ jobs:
           path: paperboat
       - uses: actions/checkout@v4
         with:
-          repository: paperboatlab/paperboat-toolkit-optimization
+          repository: paperboatlab/simplicial-toolkit-optimization
           ref: dev
           path: optimization
       - name: Overlay the toolkits

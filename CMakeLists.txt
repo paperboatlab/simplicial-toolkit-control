@@ -1,4 +1,4 @@
-# paperboat-toolkit-control: the optional control toolkit for Paperboat.
+# simplicial-toolkit-control: the optional control toolkit for Paperboat.
 #
 # Builds paperboat::toolkit_control. It links the optimization toolkit's Workspace.
 #   1. In-tree: copy this folder into a paperboat checkout at engine/toolkit/control and
@@ -24,12 +24,12 @@ if(NOT DEFINED PAPERBOAT_SOURCE_DIR OR NOT EXISTS "${PAPERBOAT_SOURCE_DIR}/engin
 endif()
 
 if(NOT DEFINED PAPERBOAT_OPTIMIZATION_DIR OR NOT EXISTS "${PAPERBOAT_OPTIMIZATION_DIR}/CMakeLists.txt")
-  if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../paperboat-toolkit-optimization/engine/toolkit/optimization/CMakeLists.txt")
-    set(PAPERBOAT_OPTIMIZATION_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../paperboat-toolkit-optimization/engine/toolkit/optimization")
+  if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../simplicial-toolkit-optimization/engine/toolkit/optimization/CMakeLists.txt")
+    set(PAPERBOAT_OPTIMIZATION_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../simplicial-toolkit-optimization/engine/toolkit/optimization")
   else()
     message(STATUS "PAPERBOAT_OPTIMIZATION_DIR not set; fetching the optimization toolkit from GitHub")
     FetchContent_Declare(optimization
-      GIT_REPOSITORY https://github.com/paperboatlab/paperboat-toolkit-optimization.git
+      GIT_REPOSITORY https://github.com/paperboatlab/simplicial-toolkit-optimization.git
       GIT_TAG dev)
     FetchContent_MakeAvailable(optimization)
     set(PAPERBOAT_OPTIMIZATION_DIR "${optimization_SOURCE_DIR}/engine/toolkit/optimization")
