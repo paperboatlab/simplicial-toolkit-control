@@ -4,7 +4,7 @@ The optional control toolkit for [Paperboat](https://github.com/paperboatlab/pap
 clock dynamics, transfer functions and state space, filters, nonlinear and discrete blocks, LQR,
 observers and Kalman filters, and per-step MPC on the optimization toolkit.
 
-**Docs:** <https://paperboatlab.github.io/toolkits/control/>, also in the Help window (F1) of
+**Docs:** <https://paperboatlab.org/toolkits/control/>, also in the Help window (F1) of
 Paperboat. Their sources live with the code: `engine/toolkit/control/docs/` for the toolkit's
 pages, and a block's notes in its folder (`src/control/<block>/doc.rst`):
 a block's ports and params come from the catalog, so write only what the catalog can't say.
