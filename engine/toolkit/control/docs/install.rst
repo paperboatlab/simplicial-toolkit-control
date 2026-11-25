@@ -5,8 +5,8 @@ The control toolkit links the optimization toolkit, so install both:
 
 .. code-block:: sh
 
-   paperboat toolkit install optimization --repo https://github.com/paperboatlab/paperboat-toolkit-optimization.git
-   paperboat toolkit install control --repo https://github.com/paperboatlab/paperboat-toolkit-control.git
+   paperboat toolkit install optimization --repo https://github.com/paperboatlab/simplicial-toolkit-optimization.git
+   paperboat toolkit install control --repo https://github.com/paperboatlab/simplicial-toolkit-control.git
 
 A C++ station registers them in its ``main``:
 
